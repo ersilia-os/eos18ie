@@ -1,9 +1,12 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos18ie",
+    "Slug": "antibiotics-ai",
+    "Status": "In progress",
+    "Title": "Substructure-based search of novel antibiotics",
+    "Description": [
+        "The authors use a large dataset (>30k) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method",
+        "they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci."
+    ],
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +15,12 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Cytotoxicity",
+        "Antimicrobial activity",
+        ""
+    ],
+    "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
+    "Source Code": "https://github.com/felixjwong/antibioticsai",
+    "License": "MIT"
 }
