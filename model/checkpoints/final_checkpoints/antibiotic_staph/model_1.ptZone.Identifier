@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/felixjwong/antibioticsai/blob/main/final_checkpoints/antibiotic_staph/model_1.pt
+HostUrl=https://raw.githubusercontent.com/felixjwong/antibioticsai/main/final_checkpoints/antibiotic_staph/model_1.pt
