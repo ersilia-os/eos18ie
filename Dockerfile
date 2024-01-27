@@ -3,6 +3,8 @@ MAINTAINER ersilia
 
 RUN pip install rdkit
 RUN pip install git+https://github.com/bp-kelley/descriptastorus
+RUN pip install chemprop==1.3.0
+RUN pip install tensorboardX==2.0
 RUN pip install pytorch
 
 WORKDIR /repo
