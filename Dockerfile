@@ -2,7 +2,7 @@ FROM bentoml/model-server:0.11.0-py310
 MAINTAINER ersilia
 
 RUN pip install rdkit==2023.9.4
-RUN pip install descriptastorus==2.5.0.23
+RUN pip install git+https://github.com/bp-kelley/descriptastorus@da9760932ab9a78b116bc697795dd9e1798f087a
 RUN pip install tqdm==4.66.1
 RUN pip install typed-argument-parser==1.6.1
 RUN pip install scikit-learn==1.4.0
