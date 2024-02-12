@@ -26,6 +26,7 @@ The authors use a large dataset (>30k) to train an explainable graph-based model
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos18ie)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos18ie) (AMD64, ARM64)
 
 ## Citation
 
