@@ -1,37 +1,47 @@
 {
     "Identifier": "eos18ie",
-    "Slug": "antibiotics-ai",
+    "Slug": "antibiotics-ai-saureus",
     "Status": "Ready",
-    "Title": "Substructure-based search of novel antibiotics",
-    "Description": "The authors use a large dataset (>30k) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.",
-    "Mode": "Pretrained",
-    "Task": [
-        "Classification"
-    ],
+    "Title": "Antibiotic activity prediction against Staphylococcus aureus",
+    "Description": "The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.\n",
+    "Source": "Local",
+    "Source Type": "External",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Antimicrobial resistance"
+    ],
+    "Target Organism": [
+        "Staphylococcus aureus"
+    ],
     "Output": [
-        "Probability"
+        "Score"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "Single",
-    "Interpretation": "Probability off growth inhibition (80% cut off at 50uM)",
+    "Output Dimension": 1,
+    "Output Consistency": "Fixed",
+    "Interpretation": "Probability of growth inhibition (80% cut off at 50uM)",
     "Tag": [
-        "Cytotoxicity",
         "Antimicrobial activity",
         "ESKAPE"
     ],
     "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2023,
     "Source Code": "https://github.com/felixjwong/antibioticsai",
     "License": "MIT",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip",
+    "Contributor": "Richiio",
+    "Incorporation Date": "2024-01-26",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos18ie",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip",
+    "Deployment": [
+        "Local"
     ]
 }
