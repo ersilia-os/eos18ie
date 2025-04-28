@@ -3,21 +3,18 @@
     "Slug": "antibiotics-ai-saureus",
     "Status": "Ready",
     "Title": "Antibiotic activity prediction against Staphylococcus aureus",
-    "Description": "The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.\n",
+    "Description": "The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Antimicrobial resistance"
-    ],
-    "Target Organism": [
-        "Staphylococcus aureus"
-    ],
     "Output": [
         "Score"
     ],
@@ -28,20 +25,23 @@
         "Antimicrobial activity",
         "ESKAPE"
     ],
-    "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
+    "Biomedical Area": [
+        "Antimicrobial resistance"
+    ],
+    "Target Organism": [
+        "Staphylococcus aureus"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2023,
+    "Publication": "https://www.nature.com/articles/s41586-023-06887-8",
     "Source Code": "https://github.com/felixjwong/antibioticsai",
     "License": "MIT",
     "Contributor": "Richiio",
     "Incorporation Date": "2024-01-26",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos18ie",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip",
-    "Deployment": [
-        "Local"
     ]
 }
