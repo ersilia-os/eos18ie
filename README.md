@@ -43,10 +43,6 @@ Below are the **Output Columns** of the model:
 - **Environment Size (Mb):** `5601`
 - **Image Size (Mb):** `6608.82`
 
-**Computational Performance (seconds):**
-- 4 inputs: `84.4`
-- 20 inputs: `91.05`
-- 100 inputs: `148.86`
 
 ### References
 - **Source Code**: [https://github.com/felixjwong/antibioticsai](https://github.com/felixjwong/antibioticsai)
