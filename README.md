@@ -44,8 +44,8 @@ Below are the **Output Columns** of the model:
 - **Image Size (Mb):** `6574`
 
 **Computational Performance (seconds):**
-- 10 inputs: `41.9`
-- 100 inputs: `57.4`
+- 10 inputs: `42.28`
+- 100 inputs: `58.84`
 - 10000 inputs: `-1`
 
 ### References
