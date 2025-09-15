@@ -2,8 +2,7 @@
 
 The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.
 
-This model was incorporated on 2024-01-26.
-
+This model was incorporated on 2024-01-26.Last packaged on 2025-09-15.
 
 ## Information
 ### Identifiers
@@ -42,11 +41,11 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `854`
 - **Environment Size (Mb):** `5642`
-- **Image Size (Mb):** `6574`
+- **Image Size (Mb):** `6579.01`
 
 **Computational Performance (seconds):**
-- 10 inputs: `42.28`
-- 100 inputs: `58.84`
+- 10 inputs: `42.63`
+- 100 inputs: `58.62`
 - 10000 inputs: `-1`
 
 ### References
