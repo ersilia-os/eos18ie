@@ -2,7 +2,7 @@
 
 The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.
 
-This model was incorporated on 2024-01-26.Last packaged on 2025-09-15.
+This model was incorporated on 2024-01-26.Last packaged on 2026-03-23.
 
 ## Information
 ### Identifiers
@@ -35,17 +35,17 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos18ie](https://hub.docker.com/r/ersiliaos/eos18ie)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `854`
 - **Environment Size (Mb):** `5613`
-- **Image Size (Mb):** `6579.01`
+- **Image Size (Mb):** `6591.54`
 
 **Computational Performance (seconds):**
-- 10 inputs: `42.63`
-- 100 inputs: `58.62`
+- 10 inputs: `58.76`
+- 100 inputs: `-1`
 - 10000 inputs: `-1`
 
 ### References
