@@ -4,6 +4,7 @@ import csv
 import sys
 
 import chemprop
+
 # parse arguments
 input_file = sys.argv[1]
 output_file = sys.argv[2]
@@ -11,19 +12,19 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
-dir_model= os.path.abspath(os.path.join(root,"..", "..","checkpoints", "final_checkpoints"))
+dir_model = os.path.abspath(os.path.join(root, "..", "..", "checkpoints", "final_checkpoints"))
 
 
 # my model
 def my_model(smiles_list):
-    
-    smiles_list_list= [[smiles] for smiles in smiles_list]  
+
+    smiles_list_list = [[smiles] for smiles in smiles_list]
     arguments = [
-    '--test_path', '/dev/null',
-    '--preds_path', '/dev/null',
-    '--checkpoint_dir', dir_model,
-    '--features_generator', 'rdkit_2d_normalized',
-    '--no_features_scaling'
+        '--test_path', '/dev/null',
+        '--preds_path', '/dev/null',
+        '--checkpoint_dir', dir_model,
+        '--features_generator', 'rdkit_2d_normalized',
+        '--no_features_scaling'
     ]
 
     args = chemprop.args.PredictArgs().parse_args(arguments)
@@ -37,10 +38,16 @@ with open(input_file, "r") as f:
     next(reader)  # skip header
     smiles_list = [r[0] for r in reader]
 
-# run model
-outputs = my_model(smiles_list)
+# run model per molecule with try/except so a single failure does not crash the script
+outputs = []
+for smiles in smiles_list:
+    try:
+        result = my_model([smiles])
+        outputs.append(result[0])
+    except Exception:
+        outputs.append([""])
 
-#check input and output have the same lenght
+# check input and output have the same length
 input_len = len(smiles_list)
 output_len = len(outputs)
 assert input_len == output_len
