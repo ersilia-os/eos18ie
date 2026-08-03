@@ -1,7 +1,7 @@
 {
     "Identifier": "eos18ie",
     "Slug": "antibiotics-ai-saureus",
-    "Status": "Ready",
+    "Status": "In maintenance",
     "Title": "Antibiotic activity prediction against Staphylococcus aureus",
     "Description": "The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.",
     "Deployment": [
