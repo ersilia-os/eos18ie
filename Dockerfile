@@ -11,6 +11,7 @@ RUN pip install pandas==2.2.0
 RUN pip install tensorboardX==2.0
 RUN pip install hyperopt==0.2.7
 RUN pip install protobuf==3.20.0
+RUN pip install setuptools==80.9.0
 RUN conda install -c conda-forge xorg-libxrender=0.9.12
 RUN conda install -c conda-forge xorg-libxtst=1.2.5
 
