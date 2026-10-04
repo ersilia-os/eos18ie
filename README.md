@@ -1,6 +1,6 @@
 # Antibiotic activity prediction against Staphylococcus aureus
 
-The authors use a mid-size dataset (more than 30k compounds) to train an explainable graph-based model to identify potential antibiotics with low cytotoxicity. The model uses a substructure-based approach to explore the chemical space. Using this method, they were able to screen 283 compounds and identify a candidate active against methicillin-resistant S. aureus (MRSA) and vancomycin-resistant enterococci.
+Estimates whether a compound will halt the growth of Staphylococcus aureus. Wong and co-workers measured antibiotic activity and human cell cytotoxicity for 39,312 compounds, then trained ensembles of graph neural networks and applied them to over 12 million candidates. Rather than treating the network as a black box, they extracted the substructures driving each prediction, and testing 283 selected compounds confirmed that predicted actives clustered into recognisable structural classes, one of which proved selective against MRSA and vancomycin-resistant enterococci.
 
 This model was incorporated on 2024-01-26.Last packaged on 2026-08-07.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2024-01-26.Last packaged on 2026-08-07.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of growth inhibition (80% cut off at 50uM)
+- **Interpretation:** Probability of Staphylococcus aureus growth inhibition, with actives defined at 80% inhibition at 50 uM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
