@@ -2,7 +2,7 @@
 
 Estimates whether a compound will halt the growth of Staphylococcus aureus. Wong and co-workers measured antibiotic activity and human cell cytotoxicity for 39,312 compounds, then trained ensembles of graph neural networks and applied them to over 12 million candidates. Rather than treating the network as a black box, they extracted the substructures driving each prediction, and testing 283 selected compounds confirmed that predicted actives clustered into recognisable structural classes, one of which proved selective against MRSA and vancomycin-resistant enterococci.
 
-This model was incorporated on 2024-01-26.Last packaged on 2026-08-07.
+This model was incorporated on 2024-01-26.Last packaged on 2026-10-06.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `854`
 - **Environment Size (Mb):** `5618`
-- **Image Size (Mb):** `6593.46`
+- **Image Size (Mb):** `6600.52`
 
 **Computational Performance (seconds):**
-- 10 inputs: `44.53`
-- 100 inputs: `1492.65`
-- 10000 inputs: `-1`
+- 10 inputs: `32.16`
+- 100 inputs: `51.29`
+- 10000 inputs: `1746.57`
 
 ### References
 - **Source Code**: [https://github.com/felixjwong/antibioticsai](https://github.com/felixjwong/antibioticsai)
