@@ -2,7 +2,8 @@
 
 Estimates whether a compound will halt the growth of Staphylococcus aureus. Wong and co-workers measured antibiotic activity and human cell cytotoxicity for 39,312 compounds, then trained ensembles of graph neural networks and applied them to over 12 million candidates. Rather than treating the network as a black box, they extracted the substructures driving each prediction, and testing 283 selected compounds confirmed that predicted actives clustered into recognisable structural classes, one of which proved selective against MRSA and vancomycin-resistant enterococci.
 
-This model was incorporated on 2024-01-26.Last packaged on 2026-10-06.
+This model was incorporated on 2024-01-26.
+Last packaged on 2026-10-06.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos18ie](https://hub.docker.com/r/ersiliaos/eos18ie)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos18ie.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos18ie_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos18ie_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `854`
